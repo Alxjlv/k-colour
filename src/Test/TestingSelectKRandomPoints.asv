@@ -1,6 +1,6 @@
 tic
 clear;
-A=imread('clocktower','jpg');
-k=200;
+A=imread('../resources/clocktower','jpg');
+k=5;
 [points] = SelectKRandomPoints(A,k)
 toc
