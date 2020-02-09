@@ -12,8 +12,9 @@
 % If enter is hit the image to read will default to clocktower.jpg
 tic
 imageName = input('Please enter the name of the image you which to convert:','s');
-if length(imageName) == 0
-    imageName = 'clocktower.jpg';
+imageName = "../resources/"+imageName;
+if isempty(imageName)
+    imageName = '../resources/clocktower.jpg';
 end
 A = imread(imageName);
 
